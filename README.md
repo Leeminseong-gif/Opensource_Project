@@ -28,8 +28,8 @@ top
 | --forest | 프로세스 트리 구조 표시 |
 
 ### 사용 예시
-ps -e\n
-ps -ef\n
+ps -e
+ps -ef
 ps aux
 ps -ef | grep ssh
 ps -p 1234
