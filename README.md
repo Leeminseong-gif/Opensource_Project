@@ -17,7 +17,6 @@ top
 
 ## ps 명령어
 현재 실행 중인 프로세스 정보를 출력하는 명령어
-자주 실행하는 옵션: 'ps -e', 'ps -ef', 'ps aux'
 
 ### 주요 옵션
 | 옵션 | 설명 |
@@ -29,8 +28,8 @@ top
 | --forest | 프로세스 트리 구조 표시 |
 
 ### 사용 예시
-ps -e
-ps -ef
+ps -e\n
+ps -ef\n
 ps aux
 ps -ef | grep ssh
 ps -p 1234
