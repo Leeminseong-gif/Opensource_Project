@@ -28,11 +28,11 @@ top
 | --forest | 프로세스 트리 구조 표시 |
 
 ### 사용 예시
-ps -e
-ps -ef
-ps aux
-ps -ef | grep ssh
-ps -p 1234
+ps -e  
+ps -ef  
+ps aux  
+ps -ef | grep ssh  
+ps -p 1234  
 
 ## jobs 명령어
 백그라운드 작업 목록을 확인하는 명령어
@@ -45,12 +45,12 @@ ps -p 1234
 | -p | 작업의 PID만 출력 |
 
 ### 사용 예시
-command &    // 실행을 백그라운드로
-Ctrl + Z     // 실행 중이던 작업을 일시정지 (Stopped)
-jobs         // 백그라운드 작업 목록 출력
-jobs -l      // 작업 번호 + PID 포함하여 출력
-fg %1        // 작업 번호 1을 전경으로 가져오기
-bg %1        // 작업 번호 1을 백그라운드로 전환
+command &    // 실행을 백그라운드로  
+Ctrl + Z     // 실행 중이던 작업을 일시정지 (Stopped)  
+jobs         // 백그라운드 작업 목록 출력  
+jobs -l      // 작업 번호 + PID 포함하여 출력  
+fg %1        // 작업 번호 1을 전경으로 가져오기  
+bg %1        // 작업 번호 1을 백그라운드로 전환  
 
 ## kill 명령어
 프로세스 종료 시 사용
@@ -63,9 +63,9 @@ bg %1        // 작업 번호 1을 백그라운드로 전환
 | 1 | SIGHUP | 설정 재로드 요청 |
 
 ### 사용 예시
-kill 1234      // PID 1234 프로세스 종료 요청(SIGTERM)
-kill -9 1234   // PID 1234 강제 종료 (SIGKILL)
-kill -1 1234   // PID 1234 설정 재로드 (SIGHUP)
+kill 1234      // PID 1234 프로세스 종료 요청(SIGTERM)  
+kill -9 1234   // PID 1234 강제 종료 (SIGKILL)  
+kill -1 1234   // PID 1234 설정 재로드 (SIGHUP)  
 
-ps -ef | grep httpd       // PID 확인 후 종료하는 패턴
-kill -9 $(pidof firefox)  // firefox 전체 종료
+ps -ef | grep httpd       // PID 확인 후 종료하는 패턴  
+kill -9 $(pidof firefox)  // firefox 전체 종료  
